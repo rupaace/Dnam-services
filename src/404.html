@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- component -->
+<!-- This is an example component -->
+<div class="h-screen w-screen bg-white flex items-center font-Roboto">
+    <div class="container flex flex-col md:flex-row items-center justify-between px-5 text-gray-700">
+            <div class="w-full lg:w-1/2 mx-8">
+                <div class="text-7xl text-[#f8373f] font-dark font-extrabold mb-8"> 404</div>
+            <p class="text-2xl md:text-3xl font-light leading-normal mb-8">
+                Sorry we couldn't find the page you're looking for
+            </p>
+            
+            <a href="index.html" class="px-5 inline py-3 text-sm font-medium leading-5 shadow-2xl text-white transition-all duration-400 border border-transparent rounded-lg focus:outline-none bg-[#f8373f] active:bg-red-600 hover:bg-red-500">back to homepage</a>
+    </div>
+        <div class="w-full lg:flex lg:justify-end lg:w-1/2 mx-5 my-12">
+        <img src="img/404.jpg" class="" alt="Page not found">
+        </div>
+    
+    </div>
+</div>
+
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  const toggleSidebar = () => {
+    document.getElementById("sidebar_black").classList.toggle("hidden");
+    document
+      .getElementById("sidebar")
+      .classList.toggle("-translate-x-full");
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>
