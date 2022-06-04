@@ -87,41 +87,67 @@
       <!-- off canvas end here  -->
     </div>
   </div>
-<div class="relative flex items-top justify-center min-h-screen  sm:items-center sm:pt-0" id="contact">
-    <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <div class="mt-8 overflow-hidden">
-            <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="p-6 mr-2 hidden md:flex" data-aos="fade-right">
-                    <img src="img/login.jpg" alt="">
-  
+    <!-- Container -->
+    <div class="container mx-auto">
+        <div class="flex justify-center px-6 my-12">
+            <!-- Row -->
+            <div class="w-full xl:w-3/4 lg:w-11/12 flex">
+                <!-- Col -->
+                <div
+                    class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg"
+                    style="background-image: url('img/login.jpg')"
+                ></div>
+                <!-- Col -->
+                <div class="w-full lg:w-1/2 bg-white p-5 rounded lg:rounded-l-none">
+                    <div class="px-8 mb-4 text-center">
+                        <h3 class="pt-4 mb-2 text-2xl text-gray-600">Log In To Your Account</h3>
 
+                    </div>
+                    <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+                        <div class="mb-4">
+                            <label class="block mb-2 mt-2 text-sm font-bold text-gray-600" for="username">
+                                Username
+                            </label>
+                            <input
+                                class="w-full px-3 py-2 text-sm leading-tight text-gray-600 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                id="username"
+                                type="username"
+                                placeholder="Enter Username..."
+                            />
+
+                            <label class="block mb-2 mt-2  text-sm font-bold text-gray-600" for="password">
+                                Enter Password
+                            </label>
+                            <input
+                                class="w-full px-3 py-2 text-sm leading-tight text-gray-600 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                id="password"
+                                type="password"
+                                placeholder="Enter password..."
+                            />
+                        </div>
+                        <div class="mb-6 text-center">
+                            <button
+                                class="w-full px-4 py-2 font-bold text-white bg-red-500 rounded-md hover:bg-red-700 focus:outline-none focus:shadow-outline"
+                                type="button"
+                            >
+                                Reset Password
+                            </button>
+                        </div>
+                        <hr class="mb-6 border-t" />
+                
+                        <div class="text-center">
+                            <a
+                                class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                                href="login.html"
+                            >
+                                Already have an account? Login!
+                            </a>
+                        </div>
+                    </form>
                 </div>
-  
-                <form class="p-6 flex flex-col justify-center" data-aos="fade-left">
-                    <div class="flex flex-col">
-                        <label for="username" class="hidden">Username</label>
-                        <input type="username" name="username" id="username" placeholder="Username" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-600 font-semibold focus:border-indigo-500 focus:outline-none">
-                    </div>
-  
-                    <div class="flex flex-col mt-2">
-                        <label for="email" class="hidden">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-600 font-semibold focus:border-indigo-500 focus:outline-none">
-                    </div>
-  
-                    <div class="flex flex-col mt-2">
-                        <label for="password" class="hidden">Password</label>
-                        <input type="password" name="password" id="tel" placeholder="Password" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-600 font-semibold focus:border-indigo-500 focus:outline-none">
-                    </div>
-  
-                    <button type="submit" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
-                        Log In
-                    </button>
-                </form>
             </div>
         </div>
     </div>
-  </div>
-
 
 
 
