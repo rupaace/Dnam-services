@@ -1,26 +1,35 @@
-const objowlcarousel = $('.owl-carousel-clients');
-if (objowlcarousel.length > 0) {
-  objowlcarousel.owlCarousel({
-    responsive: {
-      0:{
-          items:3,
-      },
-      600:{
-          items:4,
-      },
-      1000: {
-        items: 6,
-      },
-      1200: {
-        items: 8,
-      },
-    },
-    loop: true,
-    lazyLoad: true,
-    autoplay: false,
-    dots: false,
-    autoplaySpeed: 1000,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-  });
+var curent = 0;
+function getFigures() {
+    return document.getElementById("carousel").getElementsByTagName("figure");
+}
+function moveForward() {
+    var pointer = 0;
+    var figures = getFigures();
+    for (var i = 0; i < figures.length; i++) {
+        if (figures[i].className == "visible") {
+            figures[i].className = "hidden";
+            pointer = i;
+            curent = pointer + 1;
+        }
+    }
+    if (++pointer == figures.length) {
+        pointer = 0;
+    }
+    figures[pointer].className = "visible";
+}
+
+function movePrev() {
+    var figures = getFigures();
+    for (var i = 0; i < figures.length; i++) {
+        if (figures[i].className == "visible") {
+            figures[i].className = "hidden";
+        }
+    }
+    if (curent === 0) {
+        curent = figures.length - 1;
+        figures[curent].className = "visible";
+    } else {
+        curent = curent - 1;
+        figures[curent].className = "visible";
+    }
 }
