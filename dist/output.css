@@ -579,10 +579,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
-.m-40 {
-  margin: 10rem;
-}
-
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -621,11 +617,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .mb-8 {
@@ -672,8 +663,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
+.ml-\[27\%\] {
+  margin-left: 27%;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.ml-\[19\%\] {
+  margin-left: 19%;
+}
+
+.ml-\[20\%\] {
+  margin-left: 20%;
 }
 
 .mt-5 {
@@ -722,58 +725,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-16 {
   margin-right: 4rem;
-}
-
-.ml-\[\] {
-  margin-left: ;
-}
-
-.ml-\[27\%\] {
-  margin-left: 27%;
-}
-
-.ml-\[25\%\] {
-  margin-left: 25%;
-}
-
-.ml-\[12\%\] {
-  margin-left: 12%;
-}
-
-.ml-\[20\%\] {
-  margin-left: 20%;
-}
-
-.ml-\[19\%\] {
-  margin-left: 19%;
-}
-
-.ml-\[15\%\] {
-  margin-left: 15%;
-}
-
-.ml-\[\%\] {
-  margin-left: %;
-}
-
-.ml-20 {
-  margin-left: 5rem;
-}
-
-.ml-32 {
-  margin-left: 8rem;
-}
-
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mr-14 {
-  margin-right: 3.5rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
 }
 
 .block {
@@ -846,38 +797,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-20 {
   height: 5rem;
-}
-
-.max-h-3 {
-  max-height: 0.75rem;
-}
-
-.max-h-5 {
-  max-height: 1.25rem;
-}
-
-.max-h-\[40px\] {
-  max-height: 40px;
-}
-
-.max-h-\[px\] {
-  max-height: px;
-}
-
-.max-h-\[20px\] {
-  max-height: 20px;
-}
-
-.max-h-\[10px\] {
-  max-height: 10px;
-}
-
-.max-h-6 {
-  max-height: 1.5rem;
-}
-
-.max-h-10 {
-  max-height: 2.5rem;
 }
 
 .max-h-8 {
@@ -1036,24 +955,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.75rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-0 {
-  gap: 0px;
-}
-
-.gap-20 {
-  gap: 5rem;
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
@@ -1303,10 +1214,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }
 
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1538,11 +1445,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
-  .sm\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .sm\:mt-5 {
     margin-top: 1.25rem;
   }
@@ -1788,61 +1690,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
-  .lg\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .lg\:ml-\[\] {
-    margin-left: ;
-  }
-
-  .lg\:ml-\[25\%\] {
-    margin-left: 25%;
-  }
-
-  .lg\:ml-\[\%\] {
-    margin-left: %;
-  }
-
-  .lg\:ml-\[30\%\] {
-    margin-left: 30%;
-  }
-
-  .lg\:ml-\[28\%\] {
-    margin-left: 28%;
-  }
-
   .lg\:ml-\[27\%\] {
     margin-left: 27%;
-  }
-
-  .lg\:ml-\[10\] {
-    margin-left: 10;
-  }
-
-  .lg\:ml-\[10\%\] {
-    margin-left: 10%;
   }
 
   .lg\:ml-\[12\%\] {
     margin-left: 12%;
   }
 
-  .lg\:ml-\[24\%\] {
-    margin-left: 24%;
-  }
-
-  .lg\:ml-\[22\] {
-    margin-left: 22;
-  }
-
   .lg\:ml-\[22\%\] {
     margin-left: 22%;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
